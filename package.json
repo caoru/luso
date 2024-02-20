@@ -9,7 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "test": "vitest",
     "preview": "vite preview",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "yarn prettier --check ."
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
