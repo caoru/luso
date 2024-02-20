@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Navbar() {
   return (
     <nav
@@ -23,19 +25,19 @@ export function Navbar() {
         <div className="collapse navbar-collapse" id="navbarsExample07">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
+              <Link className="nav-link active" aria-current="page" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/order">
+              <Link className="nav-link" to="/order">
                 Order
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/order/confirm">
+              <Link className="nav-link" to="/order/confirm">
                 Confirm
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
               <a
