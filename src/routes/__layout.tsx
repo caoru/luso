@@ -7,11 +7,14 @@ export function Component() {
     <div className="layout-wrapper">
       <div className="layout-container">
         <Navbar />
-        <Sidebar />
+
         <div className="layout-page">
           <div className="content-wrapper">
-            <div className="container-lg">
-              <Outlet />
+            <div className="container">
+              <Sidebar />
+              <main>
+                <Outlet />
+              </main>
             </div>
           </div>
         </div>
